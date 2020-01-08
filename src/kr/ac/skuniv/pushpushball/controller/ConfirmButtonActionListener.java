@@ -41,7 +41,6 @@ public class ConfirmButtonActionListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		playerdata.setPlayer1(name1.getText());
 		playerdata.setPlayer2(name2.getText());
-		System.out.println(name1.getText());
 		mapdata.setInput_check(true);
 		inputframe.setVisible(false);
 		inputframe.dispose();

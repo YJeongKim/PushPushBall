@@ -38,37 +38,37 @@ public class Board {
 
 	public void pushsound() {
 		try {
-			ais = AudioSystem.getAudioInputStream(new File("push.wav"));
+			ais = AudioSystem.getAudioInputStream(new File("sound/push.wav"));
 			clip = AudioSystem.getClip();
 			clip.stop();
 			clip.open(ais);
 			clip.start();
 		} catch (Exception e) {
-			System.out.println("에러");
+			System.out.println("push sound error");
 		}
 	}
 
 	public void spacebarsound() {
 		try {
-			ais = AudioSystem.getAudioInputStream(new File("spacebar.wav"));
+			ais = AudioSystem.getAudioInputStream(new File("sound/spacebar.wav"));
 			clip = AudioSystem.getClip();
 			clip.stop();
 			clip.open(ais);
 			clip.start();
 		} catch (Exception e) {
-			System.out.println("에러");
+			System.out.println("spacebar sound error");
 		}
 	}
 
 	public void startsound() {
 		try {
-			ais = AudioSystem.getAudioInputStream(new File("start.wav"));
+			ais = AudioSystem.getAudioInputStream(new File("sound/start.wav"));
 			clip = AudioSystem.getClip();
 			clip.stop();
 			clip.open(ais);
 			clip.start();
 		} catch (Exception e) {
-			System.out.println("에러");
+			System.out.println("start sound error");
 		}
 	}
 }

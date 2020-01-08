@@ -75,26 +75,26 @@ public class Intro extends JPanel {
 
 	public void introbgmplay() {
 		try {
-			ais = AudioSystem.getAudioInputStream(new File("introbgm.wav"));
+			ais = AudioSystem.getAudioInputStream(new File("sound/introbgm.wav"));
 			clip = AudioSystem.getClip();
 			clip.open(ais);
 			clip.start();
 			clip.loop(-1);
 		} catch (Exception e) {
-			System.out.println("에러");
+			System.out.println("intro bgm error");
 		}
 	}
 
 	public void gamebgmplay() {
 		try {
-			ais = AudioSystem.getAudioInputStream(new File("boardbgm.wav"));
+			ais = AudioSystem.getAudioInputStream(new File("sound/boardbgm.wav"));
 			clip = AudioSystem.getClip();
 			clip.open(ais);
 			clip.loop(Clip.LOOP_CONTINUOUSLY);
 			clip.start();
 			clip.loop(-1);
 		} catch (Exception e) {
-			System.out.println("에러");
+			System.out.println("game bgm error");
 		}
 	}
 	
